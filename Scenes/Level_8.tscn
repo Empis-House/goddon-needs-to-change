@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://tiles.tres" type="TileSet" id=1]
+[ext_resource path="res://Scenes/UI/HUD.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Cave.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/monster.tscn" type="PackedScene" id=4]
+
+[node name="Level_8" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="." groups=["map"]]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 131072, 0, 0, 131073, 1, 0, 131074, 1, 0, 131075, 2, 0, 131088, 0, 0, 131089, 2, 0, 196608, 6, 0, 196609, 7, 0, 196610, 7, 0, 196611, 8, 0, 196619, 0, 0, 196620, 1, 0, 196621, 1, 0, 196622, 1, 0, 196623, 1, 0, 196624, 4, 0, 196625, 5, 0, 262155, 6, 0, 262156, 7, 0, 262157, 7, 0, 262158, 7, 0, 262159, 7, 0, 262160, 7, 0, 262161, 8, 0, 524289, 0, 0, 524290, 1, 0, 524291, 1, 0, 524292, 1, 0, 524293, 1, 0, 524294, 1, 0, 524295, 1, 0, 524296, 1, 0, 524297, 1, 0, 524298, 1, 0, 524299, 1, 0, 524300, 1, 0, 524301, 1, 0, 524302, 1, 0, 524303, 1, 0, 524304, 1, 0, 524305, 2, 0, 589825, 6, 0, 589826, 7, 0, 589827, 7, 0, 589828, 7, 0, 589829, 7, 0, 589830, 7, 0, 589831, 7, 0, 589832, 7, 0, 589833, 7, 0, 589834, 7, 0, 589835, 7, 0, 589836, 7, 0, 589837, 7, 0, 589838, 7, 0, 589839, 7, 0, 589840, 7, 0, 589841, 8, 0 )
+
+[node name="HUD" parent="." instance=ExtResource( 2 )]
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 320.0
+margin_bottom = 180.0
+
+[node name="monster" parent="." instance=ExtResource( 4 )]
+position = Vector2( 20, 12 )
+scale = Vector2( 1, 0.984184 )
+
+[node name="Cave" parent="." instance=ExtResource( 3 )]
+position = Vector2( 40, 116 )

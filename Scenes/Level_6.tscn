@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://tiles.tres" type="TileSet" id=1]
+[ext_resource path="res://Scenes/UI/HUD.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Cave.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/monster.tscn" type="PackedScene" id=4]
+[ext_resource path="res://kobold.tres" type="Theme" id=5]
+
+[node name="Level_6" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_right = 320.0
+margin_bottom = 180.0
+mouse_filter = 2
+theme = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="Control"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 187.0
+margin_bottom = 31.0
+text = "Try using both mutagens. What happens?"
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 262145, 0, 0, 262146, 1, 0, 262147, 2, 0, 327681, 3, 0, 327682, 4, 0, 327683, 5, 0, 327692, 0, 0, 327693, 2, 0, 393217, 3, 0, 393218, 4, 0, 393219, 5, 0, 393228, 3, 0, 393229, 5, 0, 458753, 3, 0, 458754, 4, 0, 458755, 5, 0, 458764, 3, 0, 458765, 5, 0, 524288, 0, 0, 524289, 4, 0, 524290, 4, 0, 524291, 4, 0, 524292, 1, 0, 524293, 1, 0, 524294, 1, 0, 524295, 1, 0, 524296, 1, 0, 524297, 1, 0, 524298, 1, 0, 524299, 1, 0, 524300, 4, 0, 524301, 4, 0, 524302, 1, 0, 524303, 1, 0, 524304, 1, 0, 524305, 2, 0, 589824, 3, 0, 589825, 4, 0, 589826, 4, 0, 589827, 4, 0, 589828, 4, 0, 589829, 4, 0, 589830, 4, 0, 589831, 4, 0, 589832, 4, 0, 589833, 4, 0, 589834, 4, 0, 589835, 4, 0, 589836, 4, 0, 589837, 4, 0, 589838, 4, 0, 589839, 4, 0, 589840, 4, 0, 589841, 5, 0, 655360, 6, 0, 655361, 7, 0, 655362, 7, 0, 655363, 7, 0, 655364, 7, 0, 655365, 7, 0, 655366, 7, 0, 655367, 7, 0, 655368, 7, 0, 655369, 7, 0, 655370, 7, 0, 655371, 7, 0, 655372, 7, 0, 655373, 7, 0, 655374, 7, 0, 655375, 7, 0, 655376, 7, 0, 655377, 8, 0 )
+
+[node name="HUD" parent="." instance=ExtResource( 2 )]
+margin_left = 0.0
+margin_top = 4.0
+margin_right = 320.0
+margin_bottom = 184.0
+
+[node name="monster" parent="." instance=ExtResource( 4 )]
+position = Vector2( 40, 56 )
+
+[node name="Cave" parent="." instance=ExtResource( 3 )]
+position = Vector2( 240, 116 )
