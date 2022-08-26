@@ -3,7 +3,7 @@
 [ext_resource path="res://Scripts/HUD.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Sprites/buttons/Play_button.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Sprites/buttons/Stop_button.png" type="Texture" id=3]
-[ext_resource path="res://kobold.tres" type="Theme" id=4]
+[ext_resource path="res://Assets/kobold.tres" type="Theme" id=4]
 
 [node name="HUD" type="Control"]
 anchor_left = 0.5

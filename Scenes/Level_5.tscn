@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://tiles.tres" type="TileSet" id=1]
+[ext_resource path="res://Assets/tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Scenes/UI/HUD.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Cave.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/monster.tscn" type="PackedScene" id=4]
-[ext_resource path="res://kobold.tres" type="Theme" id=5]
+[ext_resource path="res://Assets/kobold.tres" type="Theme" id=5]
 
 [node name="Level_5" type="Node2D"]
 
